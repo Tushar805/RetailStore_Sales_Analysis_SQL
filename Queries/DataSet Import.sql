@@ -1,0 +1,8 @@
+SET DATEFORMAT dmy
+BULK INSERT store
+FROM '<DataSet File Path>'
+	WITH (
+		FIRSTROW=2,
+		FIELDTERMINATOR=',',
+		ROWTERMINATOR='\n'
+	);
