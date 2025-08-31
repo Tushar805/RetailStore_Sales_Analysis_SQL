@@ -43,7 +43,7 @@ Currently, the store lacks clarity on:
 - Removed duplicate transactions using `ROW_NUMBER()`  
 - Corrected column names (e.g., `quantiy → quantity`, `prce → price`)  
 - Replaced nulls with appropriate defaults or excluded them  
-- Standardized categorical values (e.g., `Male → M`, `Female → F`)  
+- Standardized categorical values (e.g., `M → Male`, `F → Female`)  
 
 ---
 
@@ -56,3 +56,41 @@ FROM sales
 WHERE status = 'delivered'
 GROUP BY product_name
 ORDER BY total_quantity_sold DESC;
+```
+
+---
+
+## 📂 Repository Structure
+- `Data` → Raw dataset (CSV file from Kaggle)
+- `Queries/` → SQL scripts for each business question  
+- `Results/` → Output screenshots
+- `README.md` → Project documentation
+
+---
+
+## ⚡ Workflow Summary
+1. Cleaned dataset by handling duplicates, null values, and fixing column names.  
+2. Wrote SQL queries to answer key business questions.  
+3. Stored query scripts in `queries/` and results in `results/`.  
+4. Insights derived can help optimize sales, customer targeting, and operations.
+
+
+---
+
+## 🚀 How to Use
+1. Clone this repository  
+2. Import the dataset from the `Data/` folder into your SQL Server  
+3. Run queries from the `Queries/` folder in SSMS  
+4. Match outputs from the `Results/` folder
+
+---
+
+## 📈 Insights
+- Most sales occur in the evening hours  
+- Accessories and Clothing generate the highest revenue  
+- Credit Card is the most preferred payment method  
+- 36-50 age group people are top buyers  
+
+<img width="635" height="542" alt="Most Preferred Payment Mode" src="https://github.com/user-attachments/assets/ed2e4a18-6654-49cb-8676-f70cd200c708" />
+
+
